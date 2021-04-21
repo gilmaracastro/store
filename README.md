@@ -9,7 +9,7 @@
 
 ## Sobre
 
-- Este projeto nasce com a ideia de ser a parte 1 de um sistema incremental que agrega tecnologia e conhecimentos
+Este projeto nasce com a ideia de ser a parte 1 de um sistema incremental que agrega tecnologia e conhecimentos
 adquiridos de forma gradual.
 
 Vamos começar utilizando o [laravel 7.x](https://laravel.com/docs/7.x) que ainda não utiliza em sua documentação a ideia
