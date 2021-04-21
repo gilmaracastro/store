@@ -12,12 +12,12 @@
 - Este projeto nasce com a ideia de ser a parte 1 de um sistema incremental que agrega tecnologia e conhecimentos
 adquiridos de forma gradual.
 
-Vamos começar utilizando o [laravel 7x](https://laravel.com/docs/7.x) que ainda não utiliza em sua documentação a ideia
+Vamos começar utilizando o [laravel 7.x](https://laravel.com/docs/7.x) que ainda não utiliza em sua documentação a ideia
 de docker e containner que é um assunto que merece uma atenção particular.
 
 
 
-Para brincar com ele, basta instalar o laravel com suas dependências conforme descrito na sua [documentão](https://laravel.com/docs/7.x) e configurar o .env para utilizar o sqlite.
+Para brincar com ele, basta instalar o laravel com suas dependências conforme descrito na sua [documentação](https://laravel.com/docs/7.x) e configurar o .env para utilizar o sqlite.
 
 
 ### Como faz isso???
