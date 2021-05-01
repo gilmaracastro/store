@@ -39,3 +39,21 @@ DB_CONNECTION=sqlite
 ```
 
 - Crie o seguinte arquivo na pasta database: `database.sqlite`
+
+
+### Como o projeto foi desenvolvido?
+
+
+#### Autenticação dos usuários atráves do comand
+
+Vale destacar que autenticação dos usuários nessa versão é feita através da instalação de um pacote conforme descrito na
+[documentação](https://laravel.com/docs/7.x/authentication)
+
+- `composer require laravel/ui:^2.4` e `php artisan ui vue --auth`
+
+- Executa o npm e o npm run watch
+
+- Com isso já é possível logar
+
+- Para usar o HTML  e ele reconheca a sintaxe é necessário executar: `composer require laravelcollective/html` em seguida o `composer update` informação mais detalhadas no [neste site](https://www.nicesnippets.com/blog/class-form-not-found-in-laravel-7)
+
