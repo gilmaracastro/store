@@ -6,6 +6,12 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
+
+    public function formularioCadastro()
+    {
+        return view('formulario-cadastro');
+    }
+
     /**
      * Display a listing of the resource.
      *
