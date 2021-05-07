@@ -40,7 +40,21 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $product = Product::create($request->all());
+
+        if ($request->hasFile('photo')) {
+            $file = $request->file('photo');
+
+            $extension = $file->getClientOriginalExtension();
+
+            $photo = $product->id . '_photo.' . $extension;
+            $request->file('photo')->move(base_path(). '/public/img/', $photo);
+        }
+
+        $product->photo = $photo;
+        $product->save();
+
+        return view('forms.product-form');
     }
 
     /**
