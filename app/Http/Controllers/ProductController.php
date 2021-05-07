@@ -2,15 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Product;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-
-    public function formularioCadastro()
-    {
-        return view('formulario-cadastro');
-    }
 
     /**
      * Display a listing of the resource.
@@ -19,7 +15,13 @@ class ProductController extends Controller
      */
     public function index()
     {
-        //
+        $products = Product::get([
+            'name',
+            'description',
+            'photo',
+        ]);
+
+        return view('home', ['products' => $products]);
     }
 
     /**
@@ -29,7 +31,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        //
+        return view('forms.product-form');
     }
 
     /**
