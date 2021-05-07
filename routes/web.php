@@ -19,7 +19,10 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/formulario-cadastro', 'ProductController@formularioCadastro')
-    ->name('formulario');
+Route::resource('product', 'ProductController', [
+    'names' => [
+        'create' => 'product.show-form',
+    ]
+]);
