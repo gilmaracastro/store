@@ -21,7 +21,7 @@ Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');
 
-Route::resource('product', 'ProductController', [
+Route::middleware('auth')->resource('product', 'ProductController', [
     'names' => [
         'create' => 'product.show-form',
     ]
