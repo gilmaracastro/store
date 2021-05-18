@@ -18,10 +18,12 @@
 						@forelse ($products as $product)
 							<div class="col-sm-6">
 								<div class="card">
-									<img class="card-img-top" src="img/{{$product->photo}}" alt="Card image cap">
+									<a class="navbar-brand" href="product/{{$product->id}}">
+										<img class="card-img-top" src="img/{{$product->photo}}" alt="Card image cap">
+									</a>
 									<div class="card-body">
-										<p class="card-text"> {{$product->name}}</p>
-										<p class="card-text"> {{$product->description}}</p>
+										<p class="card-text">Nome: {{$product->name}}</p>
+										<p class="card-text">Descrição: {{$product->description}}</p>
 									</div>
 								</div>
 							</div>
