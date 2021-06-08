@@ -96,14 +96,18 @@ class ProductController extends Controller
         //
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
-    }
+	public function destroy($id)
+	{
+		$product = Product::findOrFail($id);
+
+		$path = base_path("public/img/{$product->photo}");
+
+		if (File::exists($path)) {
+			File::delete($path);
+		}
+
+		$product->delete();
+
+		return redirect()->action([ProductController::class, 'index']);
+	}
 }
