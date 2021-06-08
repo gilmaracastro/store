@@ -3,9 +3,9 @@
 @section('content')
 <div class="container">
 	<div class="row justify-content-center">
-		<div class="col-md-8">
+		<div class="col-md-12">
 			<div class="card">
-				<div class="card-header">{{ __('Store') }}</div>
+				<!-- <div class="card-header">{{ __('Store') }}</div> -->
 
 				<div class="card-body">
 					@if (session('status'))
@@ -16,9 +16,9 @@
 
 					<div class="row">
 						@forelse ($products as $product)
-							<div class="col-sm-6">
+							<div class="col-sm-3">
 								<div class="card">
-									<a class="navbar-brand" href="product/{{$product->id}}">
+									<a class="navbar-brand" href="products/{{$product->id}}">
 										<img class="card-img-top" src="img/{{$product->photo}}" alt="Card image cap">
 									</a>
 									<div class="card-body">
