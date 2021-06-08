@@ -7,16 +7,16 @@
 				<div class="card-header">{{ __('Formulário de Edição de Cadastro') }}</div>
 
 				<div class="card-body">
-					<form method="PUT" action="{{ route('product.store') }}" enctype="multipart/form-data">
+					<form method="POST" action="{{ route('products.update', $product->id) }}" enctype="multipart/form-data">
 						@csrf
+						@method('PUT')
 
 						<div class="row">
-
 							<div class="col-md-3">
 								<img class="card-img-top" src="/img/{{$product->photo}}" alt="Card image cap">
 
 								<div class="col-md-5">
-									<input id="photo" type="file" name="photo" src="img/{{$product->photo}}">
+									<input id="photo" type="file" name="photo" required src="img/{{$product->photo}}">
 									@error('photo')
 										<span class="invalid-feedback" role="alert">
 											<strong>{{ $message }}</strong>
@@ -47,15 +47,14 @@
 										</span>
 									@enderror
 								</div>
-
-								<div class="col-sm col-form-label text-md-right">
-									<button type="submit" class="btn btn-primary">
-										{{ __('Salvar') }}
-									</button>
-								</div>
-
 							</div>
 
+						</div>
+
+						<div class="col-sm col-form-label text-md-right">
+							<button type="submit" class="btn btn-primary">
+								{{ __('Salvar') }}
+							</button>
 						</div>
 					</form>
 				</div>
