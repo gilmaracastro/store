@@ -55,12 +55,3 @@ Vale destacar que autenticação dos usuários nessa versão é feita através d
 
 - Com isso já é possível logar
 
-- Para usar o HTML  e ele reconheca a sintaxe é necessário executar: `composer require laravelcollective/html` em seguida o `composer update` informação mais detalhadas no [neste site](https://www.nicesnippets.com/blog/class-form-not-found-in-laravel-7)
-
-
-- Exemplo de código para adicionar a imagem utilizando o boostrap:
-
-`https://getbootstrap.com/docs/4.0/components/card/`
-
-- Por que utilizar o `multipart/form-data`:
-`https://pt.stackoverflow.com/questions/418026/multipart-formdata-%C3%A9-uma-estrutura-de-dados`
