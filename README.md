@@ -55,3 +55,16 @@ Vale destacar que autenticação dos usuários nessa versão é feita através d
 
 - Com isso já é possível logar
 
+
+
+### Próximos passos
+
+- No controller adicionado como exemplo, os métodos estão recendo o id e fazendo a busca do produto a ser exibido, editado, atualizado ou excluido. Agora, faça com que ele receba o recurso.
+
+- Crie um teste para o controller, utilizando o `phpunit`.
+
+Ficou com alguma dúvida? Não deixe de comentar aqui =)
+
+
+Até mais pessoal =)
+
